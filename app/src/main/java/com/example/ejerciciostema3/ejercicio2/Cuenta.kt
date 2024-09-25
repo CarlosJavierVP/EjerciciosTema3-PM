@@ -1,10 +1,16 @@
 package com.example.ejerciciostema3.ejercicio2
 
-class Cuenta (){
+class Cuenta() {
 
-    lateinit var numeroCuenta : String
-    lateinit var propietario : Persona
-    var saldo : Double = 0.0
+    var numeroCuenta : String
+    var propietario : Persona
+    var saldo : Double
+
+    init{
+        numeroCuenta = ""
+        propietario = Persona("","",)
+        saldo = 0.0
+    }
 
     fun transaccion (cantidad : Double, tipoTransaccion : String) : String{
         var result : String =""
