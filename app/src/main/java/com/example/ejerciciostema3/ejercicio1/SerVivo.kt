@@ -20,7 +20,7 @@ open class SerVivo (var edad:Byte){
     }
 
     override fun toString(): String {
-        return " edad: "+this.edad+")"
+        return " edad: "+this.edad
     }
 
 

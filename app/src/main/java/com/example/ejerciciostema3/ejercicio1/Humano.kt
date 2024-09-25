@@ -4,6 +4,7 @@ class Humano (var nombre:String, edad:Byte) : SerVivo(edad){
 
     fun mayor(other: Humano) : Humano{
         var result : Humano = Humano(this.nombre, this.edad)
+
         if (other.edad == this.edad){
             if (other.nombre.length > this.nombre.length){
                 result = Humano(other.nombre, other.edad)
@@ -25,7 +26,7 @@ class Humano (var nombre:String, edad:Byte) : SerVivo(edad){
     }
 
     override fun toString(): String {
-        return "Humano(nombre: '$nombre'"+super.toString()
+        return "Humano(nombre: '$nombre'"+super.toString()+")"
     }
 
 
