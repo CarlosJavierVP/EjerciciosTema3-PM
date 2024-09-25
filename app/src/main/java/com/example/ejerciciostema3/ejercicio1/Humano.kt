@@ -1,7 +1,10 @@
 package com.example.ejerciciostema3.ejercicio1
 
-class Humano (var nombre:String) : SerVivo(4){
+class Humano (var nombre:String, edad:Byte) : SerVivo(edad){
 
+    fun mayor(other: Humano){
+        super.mayor(other)
+    }
 
     fun equals(other: Humano): Boolean {
         if (this === other) return true
@@ -13,7 +16,7 @@ class Humano (var nombre:String) : SerVivo(4){
     }
 
     override fun toString(): String {
-        return "Humano(nombre='$nombre')"+super.toString()
+        return "Humano(nombre: '$nombre'"+super.toString()
     }
 
 
