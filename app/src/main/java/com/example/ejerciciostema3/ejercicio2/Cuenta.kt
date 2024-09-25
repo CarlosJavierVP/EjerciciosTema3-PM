@@ -1,6 +1,12 @@
 package com.example.ejerciciostema3.ejercicio2
 
-class Cuenta (var numeroCuenta : Long, var saldo : Long, var propietario : Persona){
+class Cuenta (){
+
+    lateinit var numeroCuenta : String
+    lateinit var saldo : String
+    lateinit var propietario : Persona
+
+
 
 
 }

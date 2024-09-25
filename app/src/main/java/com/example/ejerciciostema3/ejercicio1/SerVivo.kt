@@ -11,7 +11,7 @@ open class SerVivo (var edad:Byte){
         return edad == other.edad
     }
 
-    fun mayor(other: SerVivo): SerVivo{
+    open fun mayor(other: SerVivo): SerVivo{
         var result : SerVivo = SerVivo(this.edad)
         if (other.edad > this.edad ){
             result = other
